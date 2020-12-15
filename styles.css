@@ -7,9 +7,74 @@
   body {
     height: 100vh;
     display: absolute;
-    background: #f7f3f3;
+    font-size: 20px;
+    background-color: #ffff;
+    font-family: 'Oswald', sans-serif;
+
   }
-  
+
+  .container {
+    width: 90%;
+    margin:auto;
+}
+
+/*Navigation*/
+.nav-main {
+    font-size: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px 0;
+}
+
+.nav-brand {
+    width: 70px;
+}
+
+/* NAV LEFT*/
+
+.nav-main ul {
+    display:flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #000000;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+@media (max-width:700px) {
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+    
+    .nav-main ul.nav-menu-right{
+        margin-right: 40px;
+    }
+
+    .news-cards {grid-template-columns: repeat(2,1fr);}
+    .cards-banner-one .content {
+        width: 80%;
+    }
+
+}
+
+.links-a {
+    font-size: 50px;
+}
+
+
+
+
   .memory-game {
     width: 840px;
     height: 840px;
